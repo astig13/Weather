@@ -1,6 +1,6 @@
 ---
 title: check_current_temperature_01
-timestamp: 2016-09-07T13:50:07.906616542-07:00
+timestamp: 2016-12-06T11:35:47.7175065+02:00
 ---
 
 What is the temperature in [New York](city)?
