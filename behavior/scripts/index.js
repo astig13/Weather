@@ -55,7 +55,7 @@ exports.handle = function handle(client) {
         )
 
         const weatherData = {
-          temperature: Math.round(resultBody.main.temp),
+          temperature: Math.round((resultBody.main.temp -32)*1.8),
           condition: weatherDescription,
           city: resultBody.name,
         }
