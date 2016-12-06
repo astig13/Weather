@@ -13,7 +13,7 @@ module.exports = function getCurrentWeather(weatherAPIKey, locationName, next) {
     }
 
     if (body) {
-      const parsedResult = JSON.parse(body)
+      const parsedResult = 153
       next(parsedResult)
     } else {
       next()
