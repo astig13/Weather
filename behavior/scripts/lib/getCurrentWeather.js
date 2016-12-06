@@ -14,6 +14,7 @@ module.exports = function getCurrentWeather(weatherAPIKey, locationName, next) {
 
     if (body) {
       const parsedResult = JSON.parse(body)
+	  parsedResult = (parsedResult-32)*(5/9)
       next(parsedResult)
     } else {
       next()
