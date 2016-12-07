@@ -1,10 +1,10 @@
 ---
 title: greeting
-timestamp: 2016-12-06T13:00:35.8718739+02:00
+timestamp: 2016-12-06T13:15:03.9464639+02:00
 ---
 
-Hi
+Hello
 * greeting
 
-\r Hello
+< Hello
 * greeting

@@ -34,6 +34,16 @@ exports.handle = function handle(client) {
     },
   })
 
+  const handleGreeting = client.createStep({
+  satisfied() {
+    return false
+  },
+
+  prompt() {
+    client.addResponse('greeting')
+    client.done()
+  })
+  
   const provideWeather = client.createStep({
     satisfied() {
       return false
@@ -70,8 +80,11 @@ exports.handle = function handle(client) {
   })
 
   client.runFlow({
-    classifications: {},
+    classifications: {
+	greeting: 'greeting'
+	},
     streams: {
+	  greeting: 
       main: 'getWeather',
       getWeather: [collectCity, provideWeather],
     }
