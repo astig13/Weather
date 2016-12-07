@@ -42,7 +42,8 @@ exports.handle = function handle(client) {
   prompt() {
     client.addResponse('greeting')
     client.done()
-  }})
+  }
+  })
   
   const provideWeather = client.createStep({
     satisfied() {
