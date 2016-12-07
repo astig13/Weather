@@ -85,7 +85,7 @@ exports.handle = function handle(client) {
 	greeting: 'greeting'
 	},
     streams: {
-	  greeting: handleGreeting
+	  greeting: handleGreeting,
       main: 'getWeather',
       getWeather: [collectCity, provideWeather],
     }
